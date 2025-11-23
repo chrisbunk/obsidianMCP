@@ -1,0 +1,34 @@
+{
+  "name": "obsidian-mcp-server",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MCP server to read and write to an Obsidian Vault",
+  "main": "build/index.js",
+  "bin": {
+    "obsidian-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "obsidian",
+    "ai",
+    "context"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "zod": "^3.22.4",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
